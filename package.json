@@ -1,32 +1,40 @@
 {
-  "name": "my_package",
-  "version": "1.0.0",
-  "description": "Personal development scoped project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alexizbas/orangeStudio.git"
-  },
-  "keywords": [
-    "pdp"
-  ],
-  "author": "alexizbas",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alexizbas/orangeStudio/issues"
-  },
-  "homepage": "https://github.com/alexizbas/orangeStudio#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^2.6.2",
-    "express": "^4.17.1",
-    "mongodb": "^3.2.6"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  }
+    "name": "my_package",
+    "version": "1.0.0",
+    "description": "Personal development scoped project",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node src/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alexizbas/orangeStudio.git"
+    },
+    "keywords": [
+        "pdp"
+    ],
+    "author": "alexizbas",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/alexizbas/orangeStudio/issues"
+    },
+    "homepage": "https://github.com/alexizbas/orangeStudio#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.0.0",
+        "ejs": "^2.6.2",
+        "express": "^4.17.1",
+        "mongodb": "^3.2.6"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.5",
+        "@babel/node": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
+        "eslint": "^6.0.1",
+        "eslint-plugin-react": "^7.14.2",
+        "nodemon": "^1.19.1"
+    }
 }
