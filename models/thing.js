@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// shema for the items to sell 
 const thingSchema = mongoose.Schema({
     title: { type: String, required: true },
     description: { type: String, required: true },
